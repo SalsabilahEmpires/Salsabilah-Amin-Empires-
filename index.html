@@ -3,80 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Al Amin Sohag | Literary Mind, Engineering Empire</title>
+    <title>SALSABILAH AMIN EMPIRES | Md Al Amin Sohag</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --bg: #020617; --card: #0f172a; --accent: #38bdf8; --gold: #fbbf24; --white: #f8fafc; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--white); margin: 0; line-height: 1.6; }
+        :root { --gold: #D4AF37; --navy: #001F3F; --white: #ffffff; --dark-bg: #000c1a; }
+        body { margin: 0; padding: 0; font-family: 'Georgia', serif; background-color: var(--dark-bg); color: var(--white); scroll-behavior: smooth; }
+        
+        /* Hero Section */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 12, 26, 0.85), rgba(0, 12, 26, 0.85)), url('cover.png');
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+            border-bottom: 5px solid var(--gold);
+        }
+        .hero-title { font-size: clamp(2rem, 8vw, 4rem); color: var(--gold); letter-spacing: 5px; margin: 0; text-transform: uppercase; }
+        .hero-subtitle { font-size: clamp(1rem, 4vw, 1.5rem); font-style: italic; margin: 15px 0; color: #e0e0e0; }
+        .badge { background: var(--gold); color: var(--navy); padding: 5px 15px; border-radius: 50px; font-weight: bold; font-size: 0.9rem; margin-bottom: 20px; text-transform: uppercase; }
+
+        /* Content Sections */
         .container { max-width: 1100px; margin: auto; padding: 60px 20px; }
-        header { text-align: center; padding: 40px 0; border-bottom: 1px solid #1e293b; }
-        .badge { background: linear-gradient(90deg, #0ea5e9, #6366f1); color: #fff; padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; }
-        h1 { font-size: 3rem; margin: 20px 0 5px; }
-        .tagline { color: var(--accent); font-size: 1.2rem; margin-bottom: 30px; }
-        .author-box { background: rgba(251, 191, 36, 0.1); border: 1px solid var(--gold); border-radius: 12px; padding: 25px; margin: 30px 0; border-left: 5px solid var(--gold); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .card { background: var(--card); padding: 30px; border-radius: 12px; border: 1px solid #1e293b; transition: 0.3s; }
-        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
-        .contact-info { text-align: center; margin-top: 50px; padding: 30px; background: rgba(56,189,248,0.05); border-radius: 15px; border: 1px dashed var(--accent); }
-        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #64748b; border-top: 1px solid #1e293b; }
-        a { color: var(--accent); text-decoration: none; }
+        .section-title { text-align: center; font-size: 2.2rem; color: var(--gold); margin-bottom: 40px; text-transform: uppercase; border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 10px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: rgba(255, 255, 255, 0.05); padding: 30px; border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 12px; transition: 0.4s; text-align: center; }
+        .card:hover { transform: translateY(-10px); border-color: var(--gold); background: rgba(212, 175, 55, 0.1); }
+        .card i { font-size: 2rem; color: var(--gold); margin-bottom: 15px; }
+
+        /* Special Section for Salsabilah */
+        .legacy-section { text-align: center; padding: 60px 20px; background: rgba(212, 175, 55, 0.03); }
+        .salsabilah-img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 5px solid var(--gold);
+            object-fit: cover;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+            margin-bottom: 20px;
+        }
+        .legacy-text { font-style: italic; color: var(--gold); font-size: 1.3rem; margin-top: 15px; }
+
+        /* Governing Body Section */
+        .leadership { background: var(--navy); padding: 80px 20px; text-align: center; border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold); }
+        .leader-info { margin: 30px 0; }
+        .leader-name { font-size: 2.2rem; color: var(--gold); margin-bottom: 5px; }
+        .leader-title { font-size: 1rem; text-transform: uppercase; letter-spacing: 2px; color: #bdc3c7; }
+
+        footer { text-align: center; padding: 40px; background: #000814; color: var(--gold); border-top: 1px solid var(--gold); font-size: 0.9rem; }
+        .btn { background: transparent; color: var(--gold); border: 2px solid var(--gold); padding: 12px 30px; text-decoration: none; font-weight: bold; transition: 0.3s; text-transform: uppercase; display: inline-block; margin-top: 20px; }
+        .btn:hover { background: var(--gold); color: var(--navy); }
     </style>
 </head>
 <body>
 
-<div class="container">
     <header>
         <span class="badge">DW Rising Star of Asia</span>
-        <h1>Md Al Amin Sohag</h1>
-        <p class="tagline">From English Literature to Global Infrastructure Resilience</p>
+        <h1 class="hero-title">SALSABILAH AMIN EMPIRES</h1>
+        <p class="hero-subtitle">"A Symphony of Faith and Grit"</p>
+        <p style="color: var(--gold); font-size: 1.2rem;">From English Literature to Global Infrastructure Resilience</p>
+        <a href="#vision" class="btn">Explore The Architecture</a>
     </header>
 
-    <div class="author-box">
-        <h2 style="color: var(--gold); margin-top: 0;">📚 Goodreads Verified Author</h2>
-        <p>Author of <strong>"Circuit to Start Up: Engineering Ideas to Empires"</strong>. A visionary work demonstrating how a foundation in English Literature fuels the creative and strategic mindset required to engineer large-scale industrial empires.</p>
-    </div>
-
-    <section style="padding: 20px 0;">
-        <h2 style="border-left: 4px solid var(--accent); padding-left: 15px;">Core Innovation & Research</h2>
+    <div id="vision" class="container">
+        <div style="text-align: center;">
+            <h2 class="section-title">Strategic Architecture</h2>
+        </div>
         <div class="grid">
             <div class="card">
-                <h3>The SOHAG Filter</h3>
-                <p>High-precision algorithmic data-refinement isolating critical risks in infrastructure and meteorological networks.</p>
+                <i class="fas fa-book-open"></i>
+                <h3>Goodreads Verified Author</h3>
+                <p>Author of "Circuit to Start Up: Engineering Ideas to Empires" - Bridging Literature and Industry.</p>
             </div>
             <div class="card">
-                <h3>Digit Theory</h3>
-                <p>A mathematical methodology converting analog industrial signals into predictive digital resilience models.</p>
+                <i class="fas fa-microscope"></i>
+                <h3>Global Research Impact</h3>
+                <p>Contributing to the European Commission's JRC and specialized in the SOHAG Filter & Digit Theory.</p>
             </div>
             <div class="card">
-                <h3>Global Strategy</h3>
-                <p>Strategic contributor to the European Commission's JRC research on infrastructure safety across 19 countries.</p>
+                <i class="fas fa-industry"></i>
+                <h3>Industrial Presence</h3>
+                <p>Strategic Partners of Minister-Myone Group and Butterfly Group. Leading SR Electronics Park.</p>
             </div>
+        </div>
+    </div>
+
+    <section class="legacy-section">
+        <div class="container">
+            <h2 class="section-title">The Heart of the Empire</h2><br>
+            <img src="Salsabilah.jpg" alt="Salsabilah Amin" class="salsabilah-img">
+            <div class="leader-name" style="font-size: 2rem;">SALSABILAH AMIN</div>
+            <p class="legacy-text">"The Inspiration & Light Behind the Legacy"</p>
         </div>
     </section>
 
-    <section style="padding: 20px 0;">
-        <h2 style="border-left: 4px solid var(--accent); padding-left: 15px;">Industrial Presence</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Salsabilah Amin Empires</h3>
-                <p>A premier global-intelligence conglomerate integrating high-end research with industrial excellence.</p>
-            </div>
-            <div class="card">
-                <h3>Strategic Partnerships</h3>
-                <p>Authorized Industrial Partner for leading brands including Minister-Myone Group and Butterfly Group.</p>
-            </div>
+    <section class="leadership">
+        <div style="text-align: center;">
+            <h2 class="section-title" style="color: white; border-color: white;">Governing Body</h2>
+        </div>
+        <div class="leader-info">
+            <div class="leader-name">NAHIAN SULTANA JUI</div>
+            <div class="leader-title">Chairman</div>
+        </div>
+        <div class="leader-info">
+            <div class="leader-name">MD AL AMIN SOHAG</div>
+            <div class="leader-title">Managing Director & Founder</div>
         </div>
     </section>
-
-    <div class="contact-info">
-        <h3>Official Correspondence</h3>
-        <p>Email: <a href="mailto:seo@salsabilah.com">seo@salsabilah.com</a></p>
-        <p>Web: <a href="https://salsabilah.com">www.salsabilah.com</a></p>
-    </div>
 
     <footer>
-        <p>&copy; 2026 Salsabilah Amin Empires (SAE). All Rights Reserved.</p>
+        <p>SALSABILAH AMIN EMPIRES &copy; 2026 | MD AL AMIN SOHAG | Built on Faith and Grit</p>
     </footer>
-</div>
 
 </body>
 </html>
