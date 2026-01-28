@@ -14,7 +14,7 @@
         
         header {
             height: 100vh;
-            background: linear-gradient(rgba(0, 12, 26, 0.8), rgba(0, 12, 26, 0.8)), url('cover.png');
+            background: linear-gradient(rgba(0, 12, 26, 0.85), rgba(0, 12, 26, 0.85)), url('cover.png');
             background-size: cover; background-position: center;
             display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
             border-bottom: 5px solid var(--gold);
@@ -31,7 +31,7 @@
         .card:hover { transform: translateY(-10px); border-color: var(--gold); background: rgba(212, 175, 55, 0.1); }
         .card i { font-size: 2.5rem; color: var(--gold); margin-bottom: 15px; }
 
-        /* Media & Research Table */
+        /* Media & Research Table Update */
         .media-list { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: left; background: rgba(255, 255, 255, 0.02); }
         .media-list td, .media-list th { border: 1px solid rgba(212, 175, 55, 0.2); padding: 15px; }
         .media-list th { color: var(--gold); font-size: 1rem; text-transform: uppercase; }
@@ -40,116 +40,88 @@
         .research-legacy { background: linear-gradient(145deg, rgba(212, 175, 55, 0.1), rgba(0, 31, 63, 0.5)); padding: 60px 30px; border-radius: 20px; border: 1px solid var(--gold); margin: 50px 0; text-align: center; }
         .theory-box { font-size: 1.8rem; color: var(--gold); margin: 20px 0; font-weight: bold; border: 1px dashed var(--gold); padding: 15px; display: inline-block; }
         
-        .country-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 25px; }
-        .country-pill { background: rgba(212, 175, 55, 0.15); border: 1px solid var(--gold); color: #fff; padding: 6px 15px; border-radius: 50px; font-size: 0.85rem; }
-
-        .salsabilah-img { width: 320px; height: auto; border-radius: 20px; border: 3px solid var(--gold); box-shadow: 0 0 50px rgba(212, 175, 55, 0.3); margin-bottom: 25px; }
-        .leadership { background: var(--navy); padding: 80px 20px; text-align: center; border-top: 5px solid var(--gold); border-bottom: 5px solid var(--gold); }
-        
-        footer { text-align: center; padding: 40px; background: #000814; color: var(--gold); border-top: 1px solid var(--gold); }
+        footer { text-align: center; padding: 60px 40px; background: #000814; color: var(--gold); border-top: 1px solid var(--gold); }
         .social-link { color: var(--gold); font-size: 1.8rem; margin: 0 15px; transition: 0.3s; }
+        .email-display { color: #fff; font-family: monospace; font-size: 1.1rem; margin-top: 10px; display: block; text-decoration: none; }
     </style>
 </head>
 <body>
 
     <header>
-        <span class="badge">DW Rising Star of Asia</span>
+        <span class="badge">Global Strategic Legacy</span>
         <h1 class="hero-title">SALSABILAH AMIN EMPIRES</h1>
-        <p class="hero-subtitle">"A Symphony of Faith and Grit"</p>
-        <p style="color: var(--gold); font-size: 1.1rem; letter-spacing: 1px;">From English Literature to Global Infrastructure Resilience Pioneer</p>
+        <p class="hero-subtitle">"A Symphony of Faith, Science, and Business Grit"</p>
+        <p style="color: var(--gold); font-size: 1.1rem; letter-spacing: 1px;">Scientific Contributor to JRC (European Commission) | Published Author</p>
     </header>
 
     <div class="container">
         <h2 class="section-title">Strategic Architecture</h2>
         <div class="grid">
-            <div class="card">
+            <a href="https://www.goodreads.com/book/show/210339596-circuit-to-startup" target="_blank" class="card">
                 <i class="fas fa-book-open"></i>
                 <h3>Verified Author</h3>
-                <p>Author of "Circuit to Start Up" - Integrating technological innovation with entrepreneurial vision.</p>
-            </div>
-            <a href="https://wa.me/8801711995940" target="_blank" class="card">
-                <i class="fab fa-whatsapp"></i>
-                <h3>Strategic Contact</h3>
-                <p>Direct communication for industrial research and international collaborations.</p>
+                <p>Author of <strong>"Circuit to Start Up"</strong>. Bridging engineering innovation with global entrepreneurial vision.</p>
+            </a>
+            <a href="media.html" class="card">
+                <i class="fas fa-newspaper"></i>
+                <h3>Global Media Kit</h3>
+                <p>Press coverage from DW (Germany), Reuters, and Nikkei Asia (Japan).</p>
             </a>
             <a href="https://www.facebook.com/salsabilahelectronics/" target="_blank" class="card">
                 <i class="fab fa-facebook-square"></i>
                 <h3>SR Electronics Park</h3>
-                <p>Strategic retail and consumer leadership hub in the electronics industry.</p>
+                <p>Strategic retail and consumer technology hub established since 2024.</p>
             </a>
         </div>
 
         <section class="research-legacy">
-            <h2 style="color: var(--gold); text-transform: uppercase;">Global Research Recognition</h2>
-            <div class="theory-box">SOHAG Filter & Digit Theory</div>
+            <h2 style="color: var(--gold); text-transform: uppercase;">Scientific Recognition</h2>
+            <div class="theory-box">SOHAG Filter Theory & JRC139101</div>
             <p style="max-width: 850px; margin: 20px auto; font-size: 1.15rem; line-height: 1.7; color: #e0e0e0;">
-                Recognized in the <strong>European Commission’s Joint Research Centre (JRC)</strong> proceedings on Critical Infrastructure Resilience (Ispra, Italy). A pioneer in industrial data optimization across 19+ nations.
+                Documented in the <strong>European Commission’s Joint Research Centre (JRC)</strong> proceedings on Critical Infrastructure Resilience (Ispra, Italy). A precursor to industrial data optimization models.
             </p>
 
-            <h3 style="color: var(--gold); margin-top: 40px;">International Press & Media Presence</h3>
+            <h3 style="color: var(--gold); margin-top: 40px;">International Press References</h3>
             <table class="media-list">
                 <thead>
                     <tr>
-                        <th>Entity / Region</th>
-                        <th>Significance</th>
-                        <th>Reference</th>
+                        <th>Global Entity</th>
+                        <th>Region / Significance</th>
+                        <th>Source</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>European Commission (JRC)</td>
-                        <td>Scientific Publication on Resilience (2024)</td>
-                        <td><a href="#" class="media-link">View Documentation</a></td>
+                        <td>Deutsche Welle (DW)</td>
+                        <td>Germany / B2B Cashless Trend Analysis</td>
+                        <td><a href="https://amp.dw.com/en/italys-b2b-cashless-sardex-currency-set-to-take-on-the-world/a-45300395" target="_blank" class="media-link">View Report</a></td>
                     </tr>
                     <tr>
-                        <td>SALSABILAH LTD (UK)</td>
-                        <td>Corporate Registration in London, United Kingdom</td>
-                        <td><a href="#" class="media-link">Official Record</a></td>
+                        <td>Nikkei Asia</td>
+                        <td>Japan / Retail Expansion Insights</td>
+                        <td><a href="https://asia.nikkei.com/Business/Retail/Indonesian-minimart-major-Alfamart-enters-Bangladesh-to-open-100-stores" target="_blank" class="media-link">Read Insight</a></td>
                     </tr>
                     <tr>
-                        <td>19 National Dailies</td>
-                        <td>Press Coverage on "Circuit to Start Up" and Innovation</td>
-                        <td><a href="#" class="media-link">View Media Kit</a></td>
+                        <td>Reuters</td>
+                        <td>Global / 2026 Market Analysis</td>
+                        <td><a href="https://www.reuters.com/business/gold-silver-rise-near-record-highs-lingering-safe-haven-demand-2026-01-27/" target="_blank" class="media-link">Market Data</a></td>
                     </tr>
                 </tbody>
             </table>
-
-            <div class="country-grid">
-                <span class="country-pill">USA</span> <span class="country-pill">Germany</span> <span class="country-pill">UK</span>
-                <span class="country-pill">Italy</span> <span class="country-pill">Belgium</span> <span class="country-pill">Japan</span>
-                <span class="country-pill">Canada</span> <span class="country-pill">France</span> <span class="country-pill">India</span>
-                <span class="country-pill">Australia</span> <span class="country-pill">Netherlands</span> <span class="country-pill">Bangladesh</span>
-                <span class="country-pill">Switzerland</span> <span class="country-pill">South Korea</span> <span class="country-pill">Spain</span>
-            </div>
         </section>
     </div>
 
-    <section style="text-align: center; padding: 60px 20px;">
-        <h2 class="section-title">The Heart of the Empire</h2><br>
-        <img src="salsabilah.jpg" alt="Salsabilah Amin" class="salsabilah-img">
-        <h2 style="font-size: 3rem; color: var(--gold); margin: 10px 0;">SALSABILAH AMIN</h2>
-        <p style="font-style: italic; color: var(--gold); font-size: 1.4rem;">"A divine blessing, bringing prosperity and light to this legacy."</p>
-    </section>
-
-    <section class="leadership">
-        <h2 class="section-title" style="color: white; border-color: white;">Governing Body</h2>
-        <div class="leader-info">
-            <h2 style="font-size: 2.8rem; color: var(--gold); margin-bottom: 5px;">NAHIAN SULTANA JUI</h2>
-            <p style="color: #ffffff; letter-spacing: 3px; font-weight: bold; text-transform: uppercase;">Chairman</p>
-        </div>
-        <div class="leader-info" style="margin-top: 50px;">
-            <h2 style="font-size: 2.8rem; color: var(--gold); margin-bottom: 5px;">MD AL AMIN SOHAG</h2>
-            <p style="color: #ffffff; letter-spacing: 3px; font-weight: bold; text-transform: uppercase;">Managing Director & Founder</p>
-        </div>
-    </section>
-
     <footer>
-        <p>SALSABILAH AMIN EMPIRES &copy; 2026 | MD AL AMIN SOHAG</p>
-        <div style="margin-top: 15px;">
+        <h2 style="color: var(--gold); letter-spacing: 2px;">MD AL AMIN SOHAG</h2>
+        <div style="margin: 20px 0;">
+            <a href="mailto:Seo@salsabilah.com" class="email-display">Seo@salsabilah.com</a>
+            <a href="mailto:salsabilah.amin.empires@gmail.com" class="email-display" style="font-size: 0.9rem; color: #888;">salsabilah.amin.empires@gmail.com</a>
+        </div>
+        <div style="margin: 25px 0;">
             <a href="https://wa.me/8801711995940" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
             <a href="https://www.facebook.com/salsabilahelectronics/" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
         </div>
-        <p style="font-size: 0.8rem; margin-top: 15px; color: #888; letter-spacing: 1px;">BUILT ON FAITH | VALIDATED BY EUROPEAN COMMISSION (JRC)</p>
+        <p style="font-size: 0.8rem; color: #555;">SALSABILAH AMIN EMPIRES &copy; 2026 | UK REG: 09814720</p>
     </footer>
 
 </body>
